@@ -1,0 +1,566 @@
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.projects-section {
+
+    min-height: 100vh;
+
+    padding-top: 140px;
+
+    padding-bottom: 100px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(0, 217, 255, 0.06),
+            transparent 30%
+        );
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+.section-label {
+
+    color: var(--primary-color);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.section-heading h1 {
+
+    font-size:
+        clamp(40px, 5vw, 58px);
+
+    font-weight: 800;
+
+}
+
+
+.section-heading h1 span {
+
+    color: var(--primary-color);
+
+}
+
+
+.heading-line {
+
+    width: 70px;
+
+    height: 3px;
+
+    margin: 18px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary-color),
+            var(--secondary-color)
+        );
+
+    border-radius: 10px;
+
+}
+
+
+.heading-description {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.project-filters {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.filter-btn {
+
+    padding: 9px 20px;
+
+    color: #b9c7d3;
+
+    background:
+        rgba(255, 255, 255, 0.03);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.filter-btn:hover,
+
+.filter-btn.active {
+
+    color: #001018;
+
+    background: var(--primary-color);
+
+    border-color: var(--primary-color);
+
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+
+    height: 100%;
+
+    overflow: hidden;
+
+    background:
+        rgba(13, 24, 40, 0.78);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 18px;
+
+    transition: 0.35s ease;
+
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        var(--border-color);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.featured-project {
+
+    border-color:
+        rgba(0, 217, 255, 0.2);
+
+}
+
+
+/* =========================================
+   PROJECT VISUAL
+========================================= */
+
+.project-image {
+
+    height: 190px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    overflow: hidden;
+
+}
+
+
+.project-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: var(--primary-color);
+
+    filter: blur(80px);
+
+    opacity: 0.10;
+
+}
+
+
+.project-image i {
+
+    position: relative;
+
+    z-index: 1;
+
+    font-size: 60px;
+
+    color: var(--primary-color);
+
+}
+
+
+.project-image span {
+
+    position: relative;
+
+    z-index: 1;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #b9dce3;
+
+}
+
+
+/* Different project visual backgrounds */
+
+.web-project {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071724,
+            #0b1d30
+        );
+
+}
+
+
+.iot-project {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071b1b,
+            #0b2730
+        );
+
+}
+
+
+.system-project {
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b1727,
+            #10253a
+        );
+
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+
+    position: relative;
+
+    padding: 27px;
+
+}
+
+
+.project-number {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 25px;
+
+    color:
+        rgba(255, 255, 255, 0.15);
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+}
+
+
+.project-content h2 {
+
+    font-size: 22px;
+
+    padding-right: 35px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.project-content p {
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    min-height: 95px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================
+   PROJECT TECHNOLOGIES
+========================================= */
+
+.project-tech {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.project-tech span {
+
+    padding: 6px 10px;
+
+    color: #cce8ed;
+
+    background:
+        rgba(0, 217, 255, 0.06);
+
+    border:
+        1px solid rgba(0, 217, 255, 0.12);
+
+    border-radius: 15px;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================
+   PROJECT LINKS
+========================================= */
+
+.project-links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+
+.project-link {
+
+    color: #d8e7ed;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+.project-link i {
+
+    color: var(--primary-color);
+
+    margin-right: 5px;
+
+}
+
+
+.project-link:hover {
+
+    color: var(--primary-color);
+
+}
+
+
+/* =========================================
+   PROJECT NOTE
+========================================= */
+
+.project-note {
+
+    max-width: 800px;
+
+    margin: 60px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 22px;
+
+    background:
+        rgba(0, 217, 255, 0.035);
+
+    border:
+        1px solid rgba(0, 217, 255, 0.12);
+
+    border-radius: 12px;
+
+}
+
+
+.project-note i {
+
+    color: var(--primary-color);
+
+    font-size: 20px;
+
+}
+
+
+.project-note p {
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    margin: 0;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   HIDDEN FILTER ITEMS
+========================================= */
+
+.project-item.hidden {
+
+    display: none;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .projects-section {
+
+        padding-top: 120px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .project-filters {
+
+        gap: 7px;
+
+    }
+
+
+    .filter-btn {
+
+        padding: 8px 15px;
+
+    }
+
+
+    .project-content {
+
+        padding: 22px;
+
+    }
+
+
+    .project-content p {
+
+        min-height: auto;
+
+    }
+
+
+    .project-note {
+
+        align-items: flex-start;
+
+    }
+
+}

@@ -1,0 +1,335 @@
+/* =========================================
+   GLOBAL VARIABLES
+========================================= */
+
+:root {
+
+    --bg-color: #050b14;
+
+    --bg-secondary: #091321;
+
+    --card-color: #0d1828;
+
+    --primary-color: #00d9ff;
+
+    --secondary-color: #008cff;
+
+    --text-color: #ffffff;
+
+    --text-muted: #9ba8b7;
+
+    --border-color: rgba(0, 217, 255, 0.25);
+
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 90px;
+
+}
+
+
+body {
+
+    background: var(--bg-color);
+
+    color: var(--text-color);
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    padding: 18px 0;
+
+    background: rgba(5, 11, 20, 0.75);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.05);
+
+    transition: 0.3s ease;
+
+}
+
+
+.navbar.scrolled {
+
+    padding: 12px 0;
+
+    background: rgba(5, 11, 20, 0.96);
+
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-brand {
+
+    color: white !important;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.navbar-brand span {
+
+    color: var(--primary-color);
+
+}
+
+
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-link {
+
+    color: #cbd5e1 !important;
+
+    margin-left: 18px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: 0.3s ease;
+
+}
+
+
+.nav-link:hover,
+
+.nav-link.active {
+
+    color: var(--primary-color) !important;
+
+}
+
+
+.contact-nav {
+
+    border:
+        1px solid var(--primary-color);
+
+    border-radius: 20px;
+
+    padding: 8px 18px !important;
+
+    margin-left: 25px;
+
+}
+
+
+/* =========================================
+   MOBILE NAVBAR
+========================================= */
+
+.navbar-toggler {
+
+    border:
+        1px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+}
+
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+
+}
+
+
+.navbar-toggler i {
+
+    font-size: 25px;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+
+    border-radius: 8px;
+
+    padding: 11px 22px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+.btn-primary-custom {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--secondary-color)
+        );
+
+    color: #001018;
+
+    border: none;
+
+}
+
+
+.btn-primary-custom:hover {
+
+    transform: translateY(-3px);
+
+    color: #001018;
+
+    box-shadow:
+        0 10px 30px rgba(0, 217, 255, 0.25);
+
+}
+
+
+.btn-outline-custom {
+
+    color: white;
+
+    border:
+        1px solid var(--border-color);
+
+    background:
+        rgba(255, 255, 255, 0.02);
+
+}
+
+
+.btn-outline-custom:hover {
+
+    color: var(--primary-color);
+
+    border-color: var(--primary-color);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    padding: 25px 0;
+
+    background: #03070d;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+
+.footer p {
+
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+
+        padding-top: 20px;
+
+    }
+
+
+    .nav-link {
+
+        margin-left: 0;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .contact-nav {
+
+        display: inline-block;
+
+        margin-left: 0;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .navbar-brand {
+
+        font-size: 20px;
+
+    }
+
+
+    .btn {
+
+        width: 100%;
+
+    }
+
+}

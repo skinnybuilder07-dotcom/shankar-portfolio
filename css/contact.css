@@ -1,0 +1,662 @@
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+
+    min-height: 100vh;
+
+    padding-top: 140px;
+
+    padding-bottom: 100px;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0, 217, 255, 0.06),
+            transparent 30%
+        );
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+
+.section-label {
+
+    color: var(--primary-color);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.section-heading h1 {
+
+    font-size:
+        clamp(40px, 5vw, 58px);
+
+    font-weight: 800;
+
+}
+
+
+.section-heading h1 span {
+
+    color: var(--primary-color);
+
+}
+
+
+.heading-line {
+
+    width: 70px;
+
+    height: 3px;
+
+    margin: 18px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary-color),
+            var(--secondary-color)
+        );
+
+    border-radius: 10px;
+
+}
+
+
+.heading-description {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   CONTACT INFO CARD
+========================================= */
+
+.contact-info-card {
+
+    height: 100%;
+
+    padding: 40px;
+
+    background:
+        rgba(13, 24, 40, 0.78);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 18px;
+
+}
+
+
+.contact-small-title {
+
+    color: var(--primary-color);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contact-info-card h2 {
+
+    font-size: 34px;
+
+    line-height: 1.25;
+
+    margin: 15px 0;
+
+}
+
+
+.contact-info-card h2 span {
+
+    color: var(--primary-color);
+
+}
+
+
+.contact-intro {
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================================
+   CONTACT ITEMS
+========================================= */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(0, 217, 255, 0.06);
+
+    border:
+        1px solid rgba(0, 217, 255, 0.12);
+
+    border-radius: 11px;
+
+}
+
+
+.contact-icon i {
+
+    color: var(--primary-color);
+
+    font-size: 20px;
+
+}
+
+
+.contact-item span {
+
+    display: block;
+
+    color: var(--text-muted);
+
+    font-size: 11px;
+
+    margin-bottom: 3px;
+
+}
+
+
+.contact-item a,
+.contact-item p {
+
+    color: #dceaf0;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin: 0;
+
+    transition: 0.3s ease;
+
+}
+
+
+.contact-item a:hover {
+
+    color: var(--primary-color);
+
+}
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.social-section {
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.07);
+
+}
+
+
+.social-section > span {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+}
+
+
+.social-links {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 12px;
+
+}
+
+
+.social-links a {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #c9d9df;
+
+    background:
+        rgba(255, 255, 255, 0.03);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+}
+
+
+.social-links a:hover {
+
+    color: #001018;
+
+    background: var(--primary-color);
+
+    border-color: var(--primary-color);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.contact-form-card {
+
+    height: 100%;
+
+    padding: 40px;
+
+    background:
+        rgba(13, 24, 40, 0.78);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 18px;
+
+}
+
+
+.form-heading span {
+
+    color: var(--primary-color);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.form-heading h2 {
+
+    font-size: 27px;
+
+    margin: 8px 0 30px;
+
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    color: #d8e5ea;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+
+.form-control {
+
+    min-height: 48px;
+
+    padding: 12px 15px;
+
+    color: #e5f0f3 !important;
+
+    background:
+        rgba(255, 255, 255, 0.025) !important;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.09) !important;
+
+    border-radius: 9px;
+
+    box-shadow: none !important;
+
+}
+
+
+.form-control:focus {
+
+    border-color:
+        var(--primary-color) !important;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 217, 255, 0.08) !important;
+
+}
+
+
+.form-control::placeholder {
+
+    color: #687a87;
+
+}
+
+
+textarea.form-control {
+
+    resize: vertical;
+
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.send-btn {
+
+    width: 100%;
+
+    min-height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    color: #001018;
+
+    background: var(--primary-color);
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.send-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 217, 255, 0.15);
+
+}
+
+
+.send-btn i {
+
+    transition: 0.3s ease;
+
+}
+
+
+.send-btn:hover i {
+
+    transform: translateX(5px);
+
+}
+
+
+/* =========================================
+   FORM STATUS
+========================================= */
+
+.form-status {
+
+    display: none;
+
+    margin-bottom: 15px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    color: #bdecef;
+
+    background:
+        rgba(0, 217, 255, 0.05);
+
+    border:
+        1px solid rgba(0, 217, 255, 0.12);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================
+   AVAILABILITY
+========================================= */
+
+.availability-box {
+
+    max-width: 800px;
+
+    margin: 50px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px 25px;
+
+    background:
+        rgba(0, 217, 255, 0.04);
+
+    border:
+        1px solid rgba(0, 217, 255, 0.12);
+
+    border-radius: 14px;
+
+}
+
+
+.availability-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(0, 217, 255, 0.07);
+
+    border-radius: 50%;
+
+}
+
+
+.availability-icon span {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: var(--primary-color);
+
+    box-shadow:
+        0 0 10px var(--primary-color);
+
+}
+
+
+.availability-box h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.availability-box p {
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    margin: 0;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .contact-section {
+
+        padding-top: 120px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .contact-info-card,
+    .contact-form-card {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .contact-info-card h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .form-heading h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .availability-box {
+
+        align-items: flex-start;
+
+    }
+
+}

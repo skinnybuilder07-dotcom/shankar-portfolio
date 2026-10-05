@@ -1,0 +1,851 @@
+/* =========================================
+   EDUCATION SECTION
+========================================= */
+
+.education-section {
+
+    min-height: 100vh;
+
+    padding-top: 140px;
+
+    padding-bottom: 100px;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0, 217, 255, 0.06),
+            transparent 30%
+        );
+
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 75px;
+
+}
+
+
+.section-label {
+
+    color: var(--primary-color);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.section-heading h1 {
+
+    font-size:
+        clamp(40px, 5vw, 58px);
+
+    font-weight: 800;
+
+}
+
+
+.section-heading h1 span {
+
+    color: var(--primary-color);
+
+}
+
+
+.heading-line {
+
+    width: 70px;
+
+    height: 3px;
+
+    margin: 18px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary-color),
+            var(--secondary-color)
+        );
+
+    border-radius: 10px;
+
+}
+
+
+.heading-description {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   EDUCATION TIMELINE
+========================================= */
+
+.education-timeline {
+
+    position: relative;
+
+    max-width: 950px;
+
+    margin: auto;
+
+}
+
+
+.education-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 27px;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            var(--primary-color),
+            rgba(0, 217, 255, 0.03)
+        );
+
+}
+
+
+.education-item {
+
+    position: relative;
+
+    padding-left: 80px;
+
+    margin-bottom: 55px;
+
+}
+
+
+.education-dot {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--bg-color);
+
+    border:
+        2px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+    z-index: 2;
+
+    box-shadow:
+        0 0 20px rgba(0, 217, 255, 0.15);
+
+}
+
+
+.education-dot i {
+
+    font-size: 22px;
+
+}
+
+
+.diploma-dot {
+
+    background:
+        rgba(0, 217, 255, 0.08);
+
+}
+
+
+/* =========================================
+   EDUCATION CARD
+========================================= */
+
+.education-card {
+
+    padding: 35px;
+
+    background:
+        rgba(13, 24, 40, 0.78);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 18px;
+
+    transition: 0.35s ease;
+
+}
+
+
+.education-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color:
+        var(--border-color);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.diploma-card {
+
+    border-color:
+        rgba(0, 217, 255, 0.12);
+
+}
+
+
+/* =========================================
+   EDUCATION HEADER
+========================================= */
+
+.education-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    padding-bottom: 22px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.07);
+
+}
+
+
+.education-level {
+
+    color: var(--primary-color);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.education-header h2 {
+
+    font-size: 27px;
+
+    margin: 9px 0 7px;
+
+}
+
+
+.education-header h3 {
+
+    color: #c5d1dd;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    margin: 0;
+
+    line-height: 1.5;
+
+}
+
+
+.education-year {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+}
+
+
+.education-year i {
+
+    color: var(--primary-color);
+
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.school-location {
+
+    margin: 20px 0;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+}
+
+
+.school-location i {
+
+    color: var(--primary-color);
+
+    margin-right: 6px;
+
+}
+
+
+/* =========================================
+   RESULT
+========================================= */
+
+.education-result {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 22px;
+
+    background:
+        rgba(0, 217, 255, 0.05);
+
+    border:
+        1px solid rgba(0, 217, 255, 0.12);
+
+    border-radius: 12px;
+
+}
+
+
+.result-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(0, 217, 255, 0.08);
+
+    border-radius: 10px;
+
+}
+
+
+.result-icon i {
+
+    color: var(--primary-color);
+
+    font-size: 21px;
+
+}
+
+
+.education-result span {
+
+    display: block;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    margin-bottom: 2px;
+
+}
+
+
+.education-result strong {
+
+    display: block;
+
+    font-size: 20px;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.education-description {
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+    margin: 25px 0;
+
+}
+
+
+/* =========================================
+   SEMESTER SECTION
+========================================= */
+
+.semester-section {
+
+    margin-top: 25px;
+
+}
+
+
+.semester-section h4 {
+
+    font-size: 18px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.semester-section h4 i {
+
+    color: var(--primary-color);
+
+    margin-right: 7px;
+
+}
+
+
+/* =========================================
+   SEMESTER GRID
+========================================= */
+
+.semester-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 10px;
+
+}
+
+
+.semester-card {
+
+    padding: 17px 10px;
+
+    text-align: center;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.semester-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color:
+        var(--border-color);
+
+}
+
+
+.semester-card span {
+
+    display: block;
+
+    color: var(--text-muted);
+
+    font-size: 11px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.semester-card strong {
+
+    display: block;
+
+    color: var(--primary-color);
+
+    font-size: 20px;
+
+}
+
+
+.semester-card small {
+
+    display: block;
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+
+    margin-top: 4px;
+
+}
+
+
+.semester-card.ongoing {
+
+    border-color:
+        rgba(0, 217, 255, 0.2);
+
+}
+
+
+/* =========================================
+   CURRENT STATUS
+========================================= */
+
+.current-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    padding: 8px 13px;
+
+    color: #bce6e9;
+
+    background:
+        rgba(0, 217, 255, 0.05);
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+}
+
+
+.status-dot {
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--primary-color);
+
+    box-shadow:
+        0 0 8px var(--primary-color);
+
+}
+
+
+/* =========================================
+   LEARNING SECTION
+========================================= */
+
+.learning-section {
+
+    max-width: 950px;
+
+    margin: 80px auto 0;
+
+}
+
+
+.learning-heading {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+.learning-heading h2 {
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+}
+
+
+.learning-heading h2 span {
+
+    color: var(--primary-color);
+
+}
+
+
+.learning-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.learning-card {
+
+    padding: 25px 18px;
+
+    text-align: center;
+
+    background:
+        rgba(13, 24, 40, 0.7);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.learning-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        var(--border-color);
+
+}
+
+
+.learning-card i {
+
+    color: var(--primary-color);
+
+    font-size: 30px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.learning-card h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.learning-card p {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    margin: 0;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .education-section {
+
+        padding-top: 120px;
+
+    }
+
+
+    .semester-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+
+    .learning-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .education-timeline::before {
+
+        left: 22px;
+
+    }
+
+
+    .education-item {
+
+        padding-left: 60px;
+
+    }
+
+
+    .education-dot {
+
+        width: 45px;
+
+        height: 45px;
+
+    }
+
+
+    .education-card {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .education-header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .education-header h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .semester-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .education-item {
+
+        padding-left: 52px;
+
+    }
+
+
+    .education-timeline::before {
+
+        left: 19px;
+
+    }
+
+
+    .education-dot {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+
+    .education-dot i {
+
+        font-size: 17px;
+
+    }
+
+
+    .semester-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .learning-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
