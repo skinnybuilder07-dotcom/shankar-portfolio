@@ -33,3 +33,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+/* =========================================
+   CERTIFICATE MODAL HANDLER
+========================================= */
+
+function openCertModal(imageSrc, title, issuer, certRef) {
+
+    const modalImage = document.getElementById("modalCertImage");
+
+    const modalTitle = document.getElementById("modalCertTitle");
+
+    const modalIssuer = document.getElementById("modalCertIssuer");
+
+    const modalBadge = document.getElementById("modalCertBadge");
+
+    const downloadBtn = document.getElementById("modalDownloadBtn");
+
+
+    if (modalImage) modalImage.src = imageSrc;
+
+    if (modalTitle) modalTitle.textContent = title;
+
+    if (modalIssuer) modalIssuer.textContent = issuer;
+
+    if (modalBadge) modalBadge.textContent = certRef ? `Ref: ${certRef}` : "Verified Credential";
+
+    if (downloadBtn) downloadBtn.href = imageSrc;
+
+}
