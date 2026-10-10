@@ -5,245 +5,394 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+        content="Resume of Shankar Kumar Saw, Computer Science Diploma Student and Aspiring Full Stack Developer.">
+
+    <meta name="author" content="Shankar Kumar Saw">
+
     <title>Shankar Kumar Saw | Resume</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            color: #222;
-        }
-
-        .resume {
-            max-width: 850px;
-            margin: 30px auto;
-            background: white;
-            padding: 45px 55px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-
-        .title {
-            margin-top: 5px;
-            font-size: 16px;
-            color: #555;
-        }
-
-        .contact {
-            margin-top: 15px;
-            font-size: 14px;
-            line-height: 1.7;
-        }
-
-        .contact a {
-            color: #222;
-            text-decoration: none;
-        }
-
-        h2 {
-            font-size: 18px;
-            margin-top: 28px;
-            padding-bottom: 6px;
-            border-bottom: 2px solid #222;
-        }
-
-        h3 {
-            font-size: 15px;
-            margin-bottom: 5px;
-        }
-
-        p {
-            line-height: 1.6;
-            font-size: 14px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 6px;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        .project-title {
-            font-weight: bold;
-        }
-
-        .download {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .download a {
-            display: inline-block;
-            padding: 10px 18px;
-            background: #222;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        @media print {
-            body {
-                background: white;
-            }
-
-            .resume {
-                margin: 0;
-                box-shadow: none;
-            }
-
-            .download {
-                display: none;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .resume {
-                margin: 0;
-                padding: 25px;
-            }
-        }
-    </style>
+    <!-- Resume CSS -->
+    <link rel="stylesheet" href="css/resume.css">
 </head>
 
 <body>
 
-    <div class="download">
-        <a href="#" onclick="window.print()">Download / Print Resume</a>
-    </div>
+    <!-- DOWNLOAD / PRINT CONTROLS -->
 
-    <div class="resume">
+    <div class="toolbar">
 
-        <h1>SHANKAR KUMAR SAW</h1>
+        <button type="button" id="downloadButton">
+            Download / Save as PDF
+        </button>
 
-        <div class="title">
-            Computer Science Diploma Student | Aspiring Full Stack Developer
-        </div>
-
-        <div class="contact">
-            Jamshedpur, Jharkhand, India<br>
-            Phone: <a href="tel:9296784249">9296784249</a><br>
-            Email: <a href="mailto:shankarsaw2230@gmail.com">
-                shankarsaw2230@gmail.com
-            </a><br>
-            LinkedIn:
-            <a href="https://linkedin.com/in/shankar-kumar-saw" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/shankar-kumar-saw
-            </a><br>
-            Portfolio:
-            <a href="https://shankar-kumar-saw.vercel.app" target="_blank" rel="noopener noreferrer">
-                shankar-kumar-saw.vercel.app
-            </a><br>
-            GitHub:
-            <a href="https://github.com/skinnybuilder07-dotcom" target="_blank" rel="noopener noreferrer">
-                github.com/skinnybuilder07-dotcom
-            </a>
-        </div>
-
-        <h2>PROFESSIONAL SUMMARY</h2>
-
-        <p>
-            Computer Science Diploma student with hands-on experience in web
-            development and frontend technologies. Familiar with HTML, CSS,
-            JavaScript, Java and Python, with an interest in full-stack development,
-            cloud computing and practical software projects. Completed a web
-            development internship and actively building responsive web projects.
-        </p>
-
-        <h2>EDUCATION</h2>
-
-        <h3>Diploma in Computer Science</h3>
-
-        <p>
-            NTTF / RD Tata Technical Institute, Jamshedpur<br>
-            Currently pursuing / 4th Semester
-        </p>
-
-        <h2>TECHNICAL SKILLS</h2>
-
-        <ul>
-            <li>Web Development: HTML5, CSS3, JavaScript, Responsive Web Design</li>
-            <li>Programming: Java, Python</li>
-            <li>Python Web Development: Full-stack fundamentals; Django basics</li>
-            <li>Database: MySQL fundamentals</li>
-            <li>Cloud & IT: AWS fundamentals, virtualization, Linux/Windows Server fundamentals</li>
-            <li>Tools & Platforms: Git/GitHub, Vercel, VS Code</li>
-        </ul>
-
-        <h2>INTERNSHIP EXPERIENCE</h2>
-
-        <h3>Web Development Intern</h3>
-
-        <ul>
-            <li>Worked on web development tasks and practical website development.</li>
-            <li>Applied HTML, CSS and JavaScript to create and improve web interfaces.</li>
-            <li>Gained practical experience with responsive design and frontend development workflows.</li>
-        </ul>
-
-        <h2>PROJECTS</h2>
-
-        <p>
-            <span class="project-title">1. Personal Portfolio Website</span><br>
-            Built a responsive developer portfolio using HTML, CSS and JavaScript;
-            deployed on Vercel.
-        </p>
-
-        <p>
-            <span class="project-title">2. Shankar Mobile Shop</span><br>
-            Designed a web-based mobile shopping interface with product browsing,
-            localStorage cart functionality and WhatsApp checkout flow.
-        </p>
-
-        <p>
-            <span class="project-title">3. Automatic Teacher Detection Smart Classroom</span><br>
-            Developed a low-cost smart classroom concept using Arduino/ESP32,
-            sensors and display output to detect teacher presence and show
-            classroom status.
-        </p>
-
-        <p>
-            <span class="project-title">4. Sai Fitness Gym Website</span><br>
-            Created a responsive gym website using HTML, CSS, JavaScript and
-            Bootstrap with multiple pages and frontend login/register UI.
-        </p>
-
-        <h2>CERTIFICATIONS & LEARNING</h2>
-
-        <ul>
-            <li>Web Development Internship — completed</li>
-            <li>Continuing learning in Python, Django, AWS/Cloud Computing and ethical hacking fundamentals</li>
-            <li>Hands-on practice with GitHub and Vercel deployment</li>
-        </ul>
-
-        <h2>CAREER OBJECTIVE</h2>
-
-        <p>
-            To begin a career in software and web development where I can apply
-            my programming and web development skills, learn modern technologies,
-            and contribute to real-world projects while growing as a full-stack
-            developer.
-        </p>
-
-        <h2>ADDITIONAL INFORMATION</h2>
-
-        <ul>
-            <li>Languages: Hindi, English</li>
-            <li>Interests: Web Development, Cloud Computing, Programming, Technology Projects</li>
-        </ul>
+        <button type="button" class="secondary-button" id="printButton">
+            Print Resume
+        </button>
 
     </div>
+
+    <!-- RESUME CONTENT -->
+
+    <main class="resume">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <h1>SHANKAR KUMAR SAW</h1>
+
+            <div class="job-title">
+                Computer Science Diploma Student | Aspiring Full Stack Developer
+            </div>
+
+            <div class="contact">
+
+                <span class="contact-item">
+                    Jamshedpur, Jharkhand, India
+                </span>
+
+                <span class="contact-item">
+                    Phone:
+                    <a href="tel:+919296784249">
+                        +91 9296784249
+                    </a>
+                </span>
+
+                <span class="contact-item">
+                    Email:
+                    <a href="mailto:shankarsaw2230@gmail.com">
+                        shankarsaw2230@gmail.com
+                    </a>
+                </span>
+
+                <span class="contact-item">
+                    Portfolio:
+                    <a href="https://shankarsaw.vercel.app" target="_blank" rel="noopener noreferrer">
+                        shankarsaw.vercel.app
+                    </a>
+                </span>
+
+                <span class="contact-item">
+                    GitHub:
+                    <a href="https://github.com/skinnybuilder07-dotcom" target="_blank" rel="noopener noreferrer">
+                        github.com/skinnybuilder07-dotcom
+                    </a>
+                </span>
+
+                <span class="contact-item">
+                    LinkedIn:
+                    <a href="https://linkedin.com/in/shankar-kumar-saw" target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/shankar-kumar-saw
+                    </a>
+                </span>
+
+            </div>
+
+        </header>
+
+        <!-- PROFESSIONAL SUMMARY -->
+
+        <section class="section">
+
+            <h2>Professional Summary</h2>
+
+            <p>
+                Computer Science diploma student with practical exposure to web
+                development and website projects. Familiar with HTML, CSS,
+                JavaScript, Bootstrap, Python, Java and MySQL. Completed a web
+                development internship at Paul Infotech Solutions and worked on
+                the Novanta Hotel project. Seeking an entry-level web development
+                opportunity to strengthen technical skills and contribute to
+                practical software projects.
+            </p>
+
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+
+        <section class="section">
+
+            <h2>Technical Skills</h2>
+
+            <div class="skill-list">
+
+                <p class="skill-item">
+                    <strong>Frontend:</strong>
+                    HTML5, CSS3, JavaScript, Bootstrap 5
+                </p>
+
+                <p class="skill-item">
+                    <strong>Backend:</strong>
+                    Python, Django fundamentals
+                </p>
+
+                <p class="skill-item">
+                    <strong>Programming:</strong>
+                    Java, C, C++
+                </p>
+
+                <p class="skill-item">
+                    <strong>Database:</strong>
+                    MySQL fundamentals
+                </p>
+
+                <p class="skill-item">
+                    <strong>Tools:</strong>
+                    Git, GitHub, VS Code, Vercel
+                </p>
+
+                <p class="skill-item">
+                    <strong>Other Knowledge:</strong>
+                    Responsive design, Linux, AWS fundamentals
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- EDUCATION -->
+
+        <section class="section">
+
+            <h2>Education</h2>
+
+            <div class="education-item">
+
+                <h3>Diploma in Computer Science</h3>
+
+                <div class="subheading">
+                    NTTF — R.D. Tata Technical Education Center,
+                    Jamshedpur, Jharkhand
+                </div>
+
+                <p>
+                    Currently pursuing diploma studies.
+                </p>
+
+                <div class="semester-list">
+                    <span>Semester 1: 7.98 SGPA</span>
+                    <span>Semester 2: 7.89 SGPA</span>
+                    <span>Semester 3: 7.20 SGPA</span>
+                    <span>Semester 4: 8.02 SGPA</span>
+                    <span>Semester 5: Ongoing</span>
+                </div>
+
+            </div>
+
+            <div class="education-item">
+
+                <h3>Class 10 — CBSE</h3>
+
+                <div class="subheading">
+                    Xavier Public School, Dorkasai, Jharkhand
+                </div>
+
+                <p>
+                    Year of Completion: 2024 |
+                    Percentage: 56.6%
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- INTERNSHIP -->
+
+        <section class="section">
+
+            <h2>Internship Experience</h2>
+
+            <div class="experience">
+
+                <h3>Web Development Intern</h3>
+
+                <div class="subheading">
+                    Paul Infotech Solutions |
+                    Duration: 4–6 months
+                </div>
+
+                <ul>
+                    <li>
+                        Participated in web development activities and
+                        practical website project work.
+                    </li>
+
+                    <li>
+                        Worked on the Novanta Hotel web project as part
+                        of the internship.
+                    </li>
+
+                    <li>
+                        Gained exposure to website development processes
+                        and frontend development workflows.
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+
+        <section class="section">
+
+            <h2>Projects</h2>
+
+            <div class="project">
+
+                <h3>1. Personal Portfolio Website</h3>
+
+                <div class="project-tech">
+                    HTML5 | CSS3 | JavaScript | Vercel
+                </div>
+
+                <p>
+                    Developed a personal portfolio website to present
+                    professional information, technical skills, education
+                    and projects. Deployed the website using Vercel.
+                </p>
+
+                <a class="project-link" href="https://shankarsaw.vercel.app" target="_blank" rel="noopener noreferrer">
+                    View Portfolio
+                </a>
+
+            </div>
+
+            <div class="project">
+
+                <h3>2. Shankar Mobile Shop</h3>
+
+                <div class="project-tech">
+                    HTML | CSS | JavaScript
+                </div>
+
+                <p>
+                    Developed a web-based mobile shopping interface with
+                    product browsing, localStorage-based cart functionality
+                    and a WhatsApp checkout flow.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>3. Automatic Teacher Detection Smart Classroom</h3>
+
+                <div class="project-tech">
+                    Arduino / ESP32 | Sensors | Display
+                </div>
+
+                <p>
+                    Designed a low-cost smart classroom project concept
+                    to detect teacher presence and display classroom status
+                    using a microcontroller, sensors and a display.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>4. Sai Fitness Gym Website</h3>
+
+                <div class="project-tech">
+                    HTML | CSS | JavaScript | Bootstrap 5
+                </div>
+
+                <p>
+                    Designed a responsive gym website with a structured
+                    multi-page layout and frontend login and registration
+                    interfaces.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>5. Novanta Hotel Website</h3>
+
+                <div class="project-tech">
+                    Web Development Internship Project
+                </div>
+
+                <p>
+                    Participated in a hotel website project during the
+                    web development internship at Paul Infotech Solutions.
+                    Add the specific technologies and features you
+                    personally implemented before submitting this resume.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CERTIFICATIONS AND LEARNING -->
+
+        <section class="section">
+
+            <h2>Professional Development</h2>
+
+            <ul>
+
+                <li>
+                    Practical web development experience through an
+                    internship at Paul Infotech Solutions.
+                </li>
+
+                <li>
+                    Ongoing learning in Python, Django, database
+                    management and web development.
+                </li>
+
+                <li>
+                    Independent practice with GitHub, website deployment
+                    and frontend project development.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ADDITIONAL INFORMATION -->
+
+        <section class="section">
+
+            <h2>Additional Information</h2>
+
+            <p>
+                <strong>Languages:</strong>
+                Hindi, English
+            </p>
+
+            <p>
+                <strong>Areas of Interest:</strong>
+                Full Stack Development, Web Technologies,
+                Programming and Cloud Computing
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        "use strict";
+
+        const downloadButton = document.getElementById("downloadButton");
+        const printButton = document.getElementById("printButton");
+
+        function saveResumeAsPDF() {
+            window.print();
+        }
+
+        function printResume() {
+            window.print();
+        }
+
+        downloadButton.addEventListener("click", saveResumeAsPDF);
+        printButton.addEventListener("click", printResume);
+    </script>
 
 </body>
 

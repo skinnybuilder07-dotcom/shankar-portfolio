@@ -1,0 +1,406 @@
+/* =========================================
+   RESUME PAGE STYLES
+========================================= */
+
+:root {
+    --primary: #172b4d;
+    --secondary: #425466;
+    --text: #263238;
+    --muted: #64748b;
+    --border: #dbe2ea;
+    --background: #eef2f6;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   DOWNLOAD BUTTONS
+========================= */
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 22px 15px;
+}
+
+.toolbar button {
+    padding: 11px 20px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.toolbar button:hover {
+    background: #263f65;
+}
+
+.toolbar .secondary-button {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.toolbar .secondary-button:hover {
+    background: #e5eaf1;
+}
+
+/* =========================
+   RESUME PAGE CONTAINER
+========================= */
+
+.resume {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 30px;
+    padding: 42px 48px;
+    background: var(--white);
+    box-shadow: 0 4px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.header h1 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    line-height: 1.3;
+}
+
+.job-title {
+    margin-top: 5px;
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px 18px;
+    margin-top: 15px;
+    color: var(--secondary);
+    font-size: 11.5px;
+}
+
+.contact-item {
+    overflow-wrap: anywhere;
+}
+
+.contact a {
+    color: var(--primary);
+}
+
+/* =========================
+   SECTION STYLES
+========================= */
+
+.section {
+    margin-top: 21px;
+    break-inside: auto;
+}
+
+.section h2 {
+    margin: 0 0 11px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border);
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.section p {
+    margin: 0 0 9px;
+}
+
+.section h3 {
+    margin: 0 0 3px;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.subheading {
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 11.5px;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+    margin: 5px 0 0;
+    padding-left: 19px;
+}
+
+li {
+    margin-bottom: 4px;
+    padding-left: 2px;
+}
+
+li::marker {
+    color: var(--primary);
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px 20px;
+}
+
+.skill-item {
+    margin: 0;
+}
+
+.skill-item strong {
+    color: var(--primary);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project {
+    margin-bottom: 13px;
+    break-inside: avoid;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.project h3 {
+    margin-bottom: 3px;
+}
+
+.project-tech {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.project p {
+    margin: 3px 0 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 3px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-item {
+    margin-bottom: 13px;
+    break-inside: avoid;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-item p {
+    margin: 3px 0;
+}
+
+.semester-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 14px;
+    margin-top: 7px;
+    color: var(--secondary);
+    font-size: 11.5px;
+}
+
+/* =========================
+   INTERNSHIP
+========================= */
+
+.experience {
+    break-inside: avoid;
+}
+
+.experience ul {
+    margin-top: 7px;
+}
+
+/* =========================
+   PRINT / PDF SETTINGS
+========================= */
+
+@page {
+    size: A4;
+    margin: 12mm;
+}
+
+@media print {
+
+    body {
+        background: var(--white);
+        font-size: 10pt;
+    }
+
+    .toolbar {
+        display: none !important;
+    }
+
+    .resume {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .header {
+        padding-bottom: 12px;
+    }
+
+    .header h1 {
+        font-size: 23pt;
+    }
+
+    .job-title {
+        font-size: 10pt;
+    }
+
+    .contact {
+        gap: 4px 12px;
+        font-size: 8.5pt;
+    }
+
+    .section {
+        margin-top: 13px;
+    }
+
+    .section h2 {
+        margin-bottom: 7px;
+        font-size: 10pt;
+    }
+
+    .section h3 {
+        font-size: 9.5pt;
+    }
+
+    .section p,
+    li {
+        font-size: 9pt;
+        line-height: 1.4;
+    }
+
+    .subheading,
+    .project-tech,
+    .semester-list {
+        font-size: 8.5pt;
+    }
+
+    .project,
+    .education-item,
+    .experience {
+        break-inside: avoid;
+    }
+
+    a {
+        color: var(--text);
+        text-decoration: none;
+    }
+
+    .section,
+    .header {
+        page-break-inside: avoid;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 600px) {
+
+    .toolbar {
+        padding: 15px 10px;
+    }
+
+    .resume {
+        padding: 25px 20px;
+        margin-bottom: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .job-title {
+        font-size: 13px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .section {
+        margin-top: 20px;
+    }
+}
