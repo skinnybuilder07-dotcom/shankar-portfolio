@@ -1,12 +1,12 @@
 /* =========================================
-   HOME PAGE THEME (PROFESSIONAL IT DEVELOPER)
+   HOME PAGE THEME (MINIMALIST CLEAN IT DEVELOPER)
 ========================================= */
 
 :root {
-    --primary-color: #00d9ff;
-    --secondary-color: #008cff;
-    --card-color: #0d1828;
-    --border-color: rgba(0, 217, 255, 0.2);
+    --primary-color: #ffffff;
+    --secondary-color: #e2e8f0;
+    --card-color: #0e131f;
+    --border-color: rgba(255, 255, 255, 0.12);
 }
 
 
@@ -21,8 +21,8 @@
     background:
         radial-gradient(
             circle at 80% 45%,
-            rgba(0, 217, 255, 0.08),
-            transparent 40%
+            rgba(255, 255, 255, 0.035),
+            transparent 45%
         );
     overflow: hidden;
 }
@@ -50,7 +50,7 @@
             rgba(255, 255, 255, 0.02) 1px,
             transparent 1px
         );
-    background-size: 50px 50px;
+    background-size: 48px 48px;
     pointer-events: none;
 }
 
@@ -65,33 +65,42 @@
 }
 
 .hero-intro {
-    color: var(--primary-color);
-    font-size: 18px;
+    display: inline-block;
+    color: #cbd5e1;
+    font-size: 14px;
     font-weight: 500;
-    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    margin-bottom: 16px;
 }
 
 .hero-content h1 {
-    font-size: clamp(42px, 6vw, 72px);
+    font-size: clamp(42px, 6vw, 70px);
     font-weight: 800;
     line-height: 1.1;
-    margin-bottom: 15px;
-    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 14px;
+    letter-spacing: -1px;
 }
 
 .hero-content h2 {
-    font-size: clamp(25px, 4vw, 40px);
+    font-size: clamp(24px, 4vw, 38px);
     font-weight: 600;
     color: #e2e8f0;
-    min-height: 50px;
+    min-height: 48px;
 }
 
 #typing-text {
-    color: var(--primary-color);
+    color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 2px;
 }
 
 .cursor {
-    color: var(--primary-color);
+    color: #ffffff;
     animation: blink 0.8s infinite;
 }
 
@@ -107,11 +116,11 @@
 ========================================= */
 
 .hero-description {
-    max-width: 620px;
-    color: var(--text-muted);
-    font-size: 18px;
+    max-width: 600px;
+    color: #94a3b8;
+    font-size: 17px;
     line-height: 1.8;
-    margin: 20px 0;
+    margin: 22px 0;
 }
 
 
@@ -120,13 +129,13 @@
 ========================================= */
 
 .location {
-    color: #b7c3d0;
-    margin-bottom: 25px;
-    font-size: 15px;
+    color: #94a3b8;
+    margin-bottom: 28px;
+    font-size: 14px;
 }
 
 .location i {
-    color: var(--primary-color);
+    color: #e2e8f0;
     margin-right: 7px;
 }
 
@@ -139,41 +148,39 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .btn-primary-custom {
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary-color),
-            var(--secondary-color)
-        );
-    color: #001018 !important;
-    border: none;
+    background: #ffffff !important;
+    color: #050b14 !important;
+    border: 1px solid #ffffff;
     font-weight: 600;
-    box-shadow: 0 4px 14px rgba(0, 217, 255, 0.25);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    padding: 11px 24px;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .btn-primary-custom:hover {
-    color: #001018 !important;
+    background: #e2e8f0 !important;
+    color: #050b14 !important;
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 217, 255, 0.35);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.22);
 }
 
 .btn-outline-custom {
-    color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #f1f5f9 !important;
+    border: 1px solid rgba(255, 255, 255, 0.16);
     background: rgba(255, 255, 255, 0.03);
     font-weight: 500;
+    padding: 11px 22px;
     transition: transform 0.25s ease, border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
 }
 
 .btn-outline-custom:hover {
-    color: var(--primary-color) !important;
-    border-color: var(--primary-color);
-    background: rgba(0, 217, 255, 0.05);
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.08);
     transform: translateY(-2px);
 }
 
@@ -184,33 +191,33 @@
 
 .social-links {
     display: flex;
-    gap: 14px;
+    gap: 12px;
 }
 
 .social-links a {
-    width: 43px;
-    height: 43px;
+    width: 42px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 50%;
-    color: #cbd5e1;
+    color: #94a3b8;
     text-decoration: none;
     background: rgba(255, 255, 255, 0.02);
     transition: 0.25s ease;
 }
 
 .social-links a:hover {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-    background: rgba(0, 217, 255, 0.06);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.08);
     transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0, 217, 255, 0.2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
 }
 
 .social-links i {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 
@@ -230,29 +237,29 @@
 
 
 /* =========================================
-   PROFILE GLOW
+   PROFILE GLOW (SUBTLE MONOCHROME HALO)
 ========================================= */
 
 .profile-glow {
     position: absolute;
     width: 320px;
     height: 320px;
-    background: var(--primary-color);
-    filter: blur(95px);
-    opacity: 0.12;
+    background: rgba(255, 255, 255, 0.05);
+    filter: blur(85px);
+    opacity: 0.5;
     border-radius: 50%;
     transition: opacity 0.4s ease, transform 0.4s ease;
     pointer-events: none;
 }
 
 .profile-container:hover .profile-glow {
-    opacity: 0.22;
+    opacity: 0.8;
     transform: scale(1.1);
 }
 
 
 /* =========================================
-   PROFILE IMAGE (HOVER TO FLOAT & HIGHLIGHT)
+   PROFILE IMAGE (HOVER TO FLOAT & ELEVATE)
 ========================================= */
 
 .profile-image-wrapper {
@@ -260,32 +267,38 @@
     width: 290px;
     height: 290px;
     border-radius: 50%;
-    padding: 5px;
+    padding: 4px;
     background:
         linear-gradient(
             135deg,
-            var(--primary-color),
-            var(--secondary-color),
-            rgba(255, 255, 255, 0.05)
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.15)
         );
     cursor: pointer;
     z-index: 2;
     transform: translateY(0);
     transition:
-        transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
-        box-shadow 0.4s ease,
-        border-color 0.4s ease;
+        transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 0.35s ease,
+        background 0.35s ease;
     box-shadow:
-        0 10px 30px -5px rgba(0, 0, 0, 0.5),
-        0 0 15px rgba(0, 217, 255, 0.1);
+        0 12px 32px -8px rgba(0, 0, 0, 0.6);
 }
 
-/* Hover effect: Smoothly floats upward with clean professional developer shadow */
+/* Hover: Smoothly floats up and creates a clean, elegant elevation shadow */
 .profile-image-wrapper:hover {
-    transform: translateY(-12px);
+    transform: translateY(-10px);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.3)
+        );
     box-shadow:
-        0 22px 40px -10px rgba(0, 0, 0, 0.65),
-        0 0 25px rgba(0, 217, 255, 0.3);
+        0 24px 48px -10px rgba(0, 0, 0, 0.8),
+        0 0 25px rgba(255, 255, 255, 0.12);
 }
 
 .profile-image {
@@ -293,8 +306,8 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid var(--bg-color);
-    transition: transform 0.4s ease;
+    border: 5px solid var(--bg-color);
+    transition: transform 0.35s ease;
     display: block;
 }
 
@@ -313,15 +326,15 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 14px;
-    background: rgba(13, 24, 40, 0.88);
-    border: 1px solid var(--border-color);
+    padding: 9px 15px;
+    background: rgba(14, 19, 30, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     color: #e2e8f0;
     font-size: 13px;
     font-weight: 500;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
     transition:
         transform 0.3s ease,
         border-color 0.3s ease,
@@ -329,16 +342,16 @@
 }
 
 .floating-card:hover {
-    border-color: var(--primary-color);
+    border-color: rgba(255, 255, 255, 0.28);
     box-shadow:
-        0 12px 30px -5px rgba(0, 0, 0, 0.5),
-        0 0 15px rgba(0, 217, 255, 0.15);
+        0 12px 30px -5px rgba(0, 0, 0, 0.6),
+        0 0 15px rgba(255, 255, 255, 0.08);
     transform: translateY(-4px);
 }
 
 .floating-card i {
-    color: var(--primary-color);
-    font-size: 17px;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 .card-one {
